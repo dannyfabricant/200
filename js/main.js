@@ -1,8 +1,11 @@
 jQuery(function ($) {
 $(document).ready( function() {
+
     $("#Glide").glide({
-        type: "carousel"
+        type: "carousel",
+        autoplay: 5000
     });
+    
     setTimeout(function() {
     	$('#carousel').animate({'opacity': 1}, 1000)
     }, 1200)

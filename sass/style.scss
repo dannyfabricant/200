@@ -111,11 +111,15 @@ header {
 				line-height: 80px;
 				.yes {
 					display: inline-block;
-					text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #B6FF00, 0 0 45px #B6FF00, 0 0 55px #B6FF00, 0 0 65px #B6FF00, 0 0 80px #B6FF00, 0 5px 80px #B6FF00, 0 -5px 80px #B6FF00;
+					text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #66ff00, 0 0 35px #66ff00, 0 0 45px #66ff00, 0 0 55px #66ff00, 0 0 70px #66ff00;
+					animation-name: neonyes;
+				    animation-duration: 2.5s;
+				    animation-iteration-count: infinite;
+				    animation-direction: alternate;
 				}
 				.no {
 					display: inline-block;
-					text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #ff0e00, 0 0 45px #ff0e00, 0 0 55px #ff0e00, 0 0 65px #ff0e00, 0 0 80px #ff0e00, 0 5px 80px #ff0e00, 0 -5px 80px #ff0e00;
+					text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #ff0e00, 0 0 45px #ff0e00, 0 0 55px #ff0e00, 0 0 65px #ff0e00, 0 0 80px #ff0e00;
 				}
 			}
 		}
@@ -128,6 +132,7 @@ header {
 			.message {
 				margin-bottom: 25px;
 			}
+			@include signup-form(#fff);
 		}
 	}
 }
@@ -163,7 +168,7 @@ header {
 					fill: none;
 					g {
 						line, polyline {
-							stroke-width: 6px;
+							stroke-width: 4px;
 							fill: none;
 							stroke: #fff;
 						}
@@ -238,6 +243,7 @@ header {
 				font-weight: 700;
 				margin-bottom: 10px;
 			}
+			@include signup-form(#000);
 		}
 	}
 }

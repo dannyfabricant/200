@@ -55,64 +55,15 @@ table {
   border-spacing: 0;
 }
 
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+@keyframes neonyes {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #66ff00, 0 0 35px #66ff00, 0 0 45px #66ff00, 0 0 55px #66ff00, 0 0 70px #66ff00;
   }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 45px #66ff00, 0 0 60px #66ff00, 0 0 75px #66ff00, 0 0 90px #66ff00, 0 0 110px #66ff00;
   }
-}
-@keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
-  }
-}
-@keyframes neon3 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
-  }
-}
-@keyframes neon4 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
-  }
-}
-@keyframes neon5 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
-  }
-}
-@keyframes neon6 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
-  }
-}
-/*REEEEEEEEEEESPONSIVE*/
-@media (max-width: 650px) {
-  /* line 57, ../sass/glow.scss */
-  #container {
-    width: 100%;
-  }
-
-  /* line 60, ../sass/glow.scss */
-  p {
-    font-size: 3.5em;
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #66ff00, 0 0 35px #66ff00, 0 0 45px #66ff00, 0 0 55px #66ff00, 0 0 70px #66ff00;
   }
 }
 /* line 9, ../sass/style.scss */
@@ -240,14 +191,18 @@ header #links .link {
 /* line 112, ../sass/style.scss */
 #top-signup .section-inner .vacancy .status .yes {
   display: inline-block;
-  text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #B6FF00, 0 0 45px #B6FF00, 0 0 55px #B6FF00, 0 0 65px #B6FF00, 0 0 80px #B6FF00, 0 5px 80px #B6FF00, 0 -5px 80px #B6FF00;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #66ff00, 0 0 35px #66ff00, 0 0 45px #66ff00, 0 0 55px #66ff00, 0 0 70px #66ff00;
+  animation-name: neonyes;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-/* line 116, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 #top-signup .section-inner .vacancy .status .no {
   display: inline-block;
-  text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #ff0e00, 0 0 45px #ff0e00, 0 0 55px #ff0e00, 0 0 65px #ff0e00, 0 0 80px #ff0e00, 0 5px 80px #ff0e00, 0 -5px 80px #ff0e00;
+  text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #ff0e00, 0 0 45px #ff0e00, 0 0 55px #ff0e00, 0 0 65px #ff0e00, 0 0 80px #ff0e00;
 }
-/* line 122, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 #top-signup .section-inner .signup {
   position: relative;
   display: inline-block;
@@ -255,12 +210,42 @@ header #links .link {
   max-width: 300px;
   text-align: left;
 }
-/* line 128, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 #top-signup .section-inner .signup .message {
   margin-bottom: 25px;
 }
+/* line 22, ../sass/functions.scss */
+#top-signup .section-inner .signup form.subscribe {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 24, ../sass/functions.scss */
+#top-signup .section-inner .signup form.subscribe input {
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 28, ../sass/functions.scss */
+#top-signup .section-inner .signup form.subscribe input.email {
+  display: inline-block;
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+}
+/* line 36, ../sass/functions.scss */
+#top-signup .section-inner .signup form.subscribe input[name='subscribe'] {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 43, ../sass/functions.scss */
+#top-signup .section-inner .signup form.subscribe input:focus {
+  outline: none;
+}
 
-/* line 136, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 #carousel {
   overflow: hidden;
   width: 100%;
@@ -268,12 +253,12 @@ header #links .link {
   padding: 0px;
   opacity: 0;
 }
-/* line 146, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 #carousel #Glide .glide__wrapper .glide__track .glide__slide img {
   width: 100%;
   height: auto;
 }
-/* line 154, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 #carousel #Glide .glide__arrows .glide__arrow {
   width: 50px;
   height: auto;
@@ -282,25 +267,25 @@ header #links .link {
   border-radius: 0;
   background-color: #000;
 }
-/* line 161, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 #carousel #Glide .glide__arrows .glide__arrow svg {
   width: auto;
   fill: none;
 }
-/* line 165, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 #carousel #Glide .glide__arrows .glide__arrow svg g line, #carousel #Glide .glide__arrows .glide__arrow svg g polyline {
-  stroke-width: 6px;
+  stroke-width: 4px;
   fill: none;
   stroke: #fff;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 #info #about {
   max-width: 600px;
   padding-top: 100px;
   font-weight: 700;
 }
-/* line 185, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 #info #facility {
   display: inline-block;
   margin-right: 100px;
@@ -308,26 +293,26 @@ header #links .link {
   max-width: 400px;
   padding-top: 100px;
 }
-/* line 191, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 #info #facility h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
-/* line 195, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 #info #facility .tagline {
   margin-bottom: 25px;
 }
-/* line 198, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 #info #facility .list {
   width: 300px;
 }
-/* line 200, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 #info #facility .list .list-item {
   font-size: 0px;
   letter-spacing: 0px;
   margin-bottom: 10px;
 }
-/* line 204, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 #info #facility .list .list-item .dot {
   display: inline-block;
   width: 4px;
@@ -338,7 +323,7 @@ header #links .link {
   background-color: #000;
   vertical-align: top;
 }
-/* line 214, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 #info #facility .list .list-item .text {
   display: inline-block;
   width: Calc(100% - 14px);
@@ -346,48 +331,78 @@ header #links .link {
   line-height: 18px;
   letter-spacing: 0.015em;
 }
-/* line 224, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 #info #pricing {
   display: inline-block;
   vertical-align: top;
   width: 300px;
   padding-top: 100px;
 }
-/* line 229, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 #info #pricing .price {
   margin-bottom: 25px;
 }
-/* line 231, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 #info #pricing .price h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
-/* line 237, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 #info #pricing .signup h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
+/* line 22, ../sass/functions.scss */
+#info #pricing .signup form.subscribe {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 24, ../sass/functions.scss */
+#info #pricing .signup form.subscribe input {
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 28, ../sass/functions.scss */
+#info #pricing .signup form.subscribe input.email {
+  display: inline-block;
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #000;
+}
+/* line 36, ../sass/functions.scss */
+#info #pricing .signup form.subscribe input[name='subscribe'] {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+}
+/* line 43, ../sass/functions.scss */
+#info #pricing .signup form.subscribe input:focus {
+  outline: none;
+}
 
-/* line 245, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 footer {
   width: 100%;
   background-color: #000;
   padding: 10px 0px;
   overflow: hidden;
 }
-/* line 250, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 footer a {
   margin-left: 25px;
   color: #fff;
 }
-/* line 254, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 footer .address {
   position: relative;
   float: right;
   margin-right: 25px;
   color: #fff;
 }
-/* line 260, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 footer .address .icon {
   position: absolute;
   left: 0;
@@ -396,16 +411,16 @@ footer .address .icon {
   width: auto;
   transform: translateX(-100%);
 }
-/* line 267, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 footer .address .icon svg {
   height: 100%;
   width: auto;
 }
-/* line 270, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 footer .address .icon svg .st0 {
   stroke: none;
 }
-/* line 275, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 footer .address .location {
   display: inline-block;
   padding-left: 10px;

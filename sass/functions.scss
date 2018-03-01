@@ -17,3 +17,31 @@
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
+
+@mixin signup-form($color) {
+	form.subscribe {
+		font-family: 'Roboto', sans-serif;
+		input {
+			margin-bottom: 10px;
+			font-family: 'Roboto', sans-serif;
+		}
+		input.email {
+			display: inline-block;
+			background-color: transparent;
+			padding: 5px;
+			border: 1px solid $color;
+			border-radius: 3px;
+			color: $color;
+		}
+		input[name='subscribe'] {
+			display: inline-block;
+			border:none;
+			background-color: transparent;
+			color: $color;
+			cursor: pointer;
+		}
+		input:focus {
+			outline: none;
+		}
+	}
+}

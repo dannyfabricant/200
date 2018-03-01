@@ -18,16 +18,37 @@ get_header(); ?>
 	<div class='section-inner'>
 		<div class='vacancy'>
 			<div class='status'>
-				<!-- <div class='no'>NO</div> -->
+
+				<?php 
+					query_posts('p=7');
+					while ( have_posts() ): the_post(); 
+						if ( CFS()->get('vacancy') == 0 ) {
+					   		echo "<div class='no'>NO</div>";
+						}
+					endwhile; 
+				?>
+
 				<div class='yes'>VACANCY</div>
 			</div>
 		</div>
 		<div class='signup'>
 			<h3 class='message'>Signup for our mialing list to find out about open spots, events, and other happenings.</h3>
-			<form class='signup-form'>
+			<!-- <form class='signup-form'>
 				<input type="text" name="email">
 				<input type="submit" name="submit">
+			</form> -->
+			<div id="mc_embed_signup">
+			<form class='subscribe' action="https://dannyfabricant.us17.list-manage.com/subscribe/post?u=b8a4a2f5082699553a98936a8&amp;id=7930919427" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			    <div id="mc_embed_signup_scroll">
+				
+				<input type="email" value="" name="EMAIL" class="email small" id="mce-EMAIL" placeholder="email address" required>
+				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+			    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b8a4a2f5082699553a98936a8_7930919427" tabindex="-1" value=""></div>
+			   
+			    </div>
 			</form>
+			</div>
 		</div>
 	</div>
 </section>
@@ -95,9 +116,15 @@ get_header(); ?>
 			</div>
 			<div class='signup'>
 				<h2 class='medium'>Get on our mailing list to hear about vacancies first!</h2>
-				<form class='signup-form'>
-					<input type="text" name="email">
-					<input type="submit" name="submit">
+				<form class='subscribe' action="https://dannyfabricant.us17.list-manage.com/subscribe/post?u=b8a4a2f5082699553a98936a8&amp;id=7930919427" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				    <div id="mc_embed_signup_scroll">
+					
+					<input type="email" value="" name="EMAIL" class="email small" id="mce-EMAIL" placeholder="email address" required>
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b8a4a2f5082699553a98936a8_7930919427" tabindex="-1" value=""></div>
+				   
+				    </div>
 				</form>
 			</div>
 		</div>
