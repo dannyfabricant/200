@@ -130,7 +130,14 @@ section.center .section-inner {
   text-align: left;
 }
 
-/* line 63, ../sass/style.scss */
+@media (max-width: 599px) {
+  /* line 62, ../sass/style.scss */
+  section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+/* line 70, ../sass/style.scss */
 header {
   position: fixed;
   width: 100%;
@@ -138,7 +145,7 @@ header {
   background-color: #000;
   z-index: 1000;
 }
-/* line 69, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 header #logo {
   float: left;
   margin-left: 25px;
@@ -148,31 +155,44 @@ header #logo {
   color: #fff;
   transform: skewX(-12deg);
 }
-/* line 78, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 header #links {
   float: right;
   margin-right: 25px;
 }
-/* line 81, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 header #links .link {
   color: #fff;
   font-size: 16px;
   line-height: 50px;
   margin-right: 10px;
 }
+@media (max-width: 599px) {
+  /* line 96, ../sass/style.scss */
+  header #logo {
+    width: Calc(100% - 50px);
+    margin: 0;
+    padding: 0 25px;
+    text-align: center;
+  }
+  /* line 102, ../sass/style.scss */
+  header #links {
+    display: none;
+  }
+}
 
-/* line 93, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 #top-signup {
   padding-top: 230px;
   padding-bottom: 150px;
   background-color: #000;
   color: #fff;
 }
-/* line 98, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 #top-signup .section-inner {
   text-align: center;
 }
-/* line 100, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 #top-signup .section-inner .vacancy {
   position: relative;
   display: inline-block;
@@ -180,7 +200,7 @@ header #links .link {
   margin-right: 50px;
   text-align: left;
 }
-/* line 106, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 #top-signup .section-inner .vacancy .status {
   margin-bottom: 50px;
   font-family: 'Ostrich Sans';
@@ -188,7 +208,7 @@ header #links .link {
   font-size: 100px;
   line-height: 80px;
 }
-/* line 112, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 #top-signup .section-inner .vacancy .status .yes {
   display: inline-block;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #66ff00, 0 0 35px #66ff00, 0 0 45px #66ff00, 0 0 55px #66ff00, 0 0 70px #66ff00;
@@ -197,12 +217,12 @@ header #links .link {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-/* line 120, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 #top-signup .section-inner .vacancy .status .no {
   display: inline-block;
   text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #ff0e00, 0 0 45px #ff0e00, 0 0 55px #ff0e00, 0 0 65px #ff0e00, 0 0 80px #ff0e00;
 }
-/* line 126, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 #top-signup .section-inner .signup {
   position: relative;
   display: inline-block;
@@ -210,7 +230,7 @@ header #links .link {
   max-width: 300px;
   text-align: left;
 }
-/* line 132, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 #top-signup .section-inner .signup .message {
   margin-bottom: 25px;
 }
@@ -245,7 +265,7 @@ header #links .link {
   outline: none;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 #carousel {
   overflow: hidden;
   width: 100%;
@@ -253,12 +273,12 @@ header #links .link {
   padding: 0px;
   opacity: 0;
 }
-/* line 151, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 #carousel #Glide .glide__wrapper .glide__track .glide__slide img {
   width: 100%;
   height: auto;
 }
-/* line 159, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 #carousel #Glide .glide__arrows .glide__arrow {
   width: 50px;
   height: auto;
@@ -267,25 +287,43 @@ header #links .link {
   border-radius: 0;
   background-color: #000;
 }
-/* line 166, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 #carousel #Glide .glide__arrows .glide__arrow svg {
   width: auto;
   fill: none;
 }
-/* line 170, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 #carousel #Glide .glide__arrows .glide__arrow svg g line, #carousel #Glide .glide__arrows .glide__arrow svg g polyline {
   stroke-width: 4px;
   fill: none;
   stroke: #fff;
 }
 
-/* line 185, ../sass/style.scss */
+@media (max-width: 599px) {
+  /* line 200, ../sass/style.scss */
+  #carousel {
+    height: 265px;
+  }
+}
+@media (min-width: 600px) {
+  /* line 205, ../sass/style.scss */
+  #carousel {
+    height: 525px;
+  }
+}
+@media (min-width: 900px) {
+  /* line 210, ../sass/style.scss */
+  #carousel {
+    height: Calc(100vh - 70px);
+  }
+}
+/* line 218, ../sass/style.scss */
 #info #about {
   max-width: 600px;
   padding-top: 100px;
   font-weight: 700;
 }
-/* line 190, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 #info #facility {
   display: inline-block;
   margin-right: 100px;
@@ -293,26 +331,26 @@ header #links .link {
   max-width: 400px;
   padding-top: 100px;
 }
-/* line 196, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 #info #facility h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
-/* line 200, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 #info #facility .tagline {
   margin-bottom: 25px;
 }
-/* line 203, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 #info #facility .list {
   width: 300px;
 }
-/* line 205, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 #info #facility .list .list-item {
   font-size: 0px;
   letter-spacing: 0px;
   margin-bottom: 10px;
 }
-/* line 209, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 #info #facility .list .list-item .dot {
   display: inline-block;
   width: 4px;
@@ -323,7 +361,7 @@ header #links .link {
   background-color: #000;
   vertical-align: top;
 }
-/* line 219, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 #info #facility .list .list-item .text {
   display: inline-block;
   width: Calc(100% - 14px);
@@ -331,23 +369,29 @@ header #links .link {
   line-height: 18px;
   letter-spacing: 0.015em;
 }
-/* line 229, ../sass/style.scss */
+@media (max-width: 599px) {
+  /* line 263, ../sass/style.scss */
+  #info #facility {
+    margin-right: 0px;
+  }
+}
+/* line 267, ../sass/style.scss */
 #info #pricing {
   display: inline-block;
   vertical-align: top;
   width: 300px;
   padding-top: 100px;
 }
-/* line 234, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 #info #pricing .price {
   margin-bottom: 25px;
 }
-/* line 236, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 #info #pricing .price h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
-/* line 242, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 #info #pricing .signup h2 {
   font-weight: 700;
   margin-bottom: 10px;
@@ -383,26 +427,26 @@ header #links .link {
   outline: none;
 }
 
-/* line 251, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 footer {
   width: 100%;
   background-color: #000;
   padding: 10px 0px;
   overflow: hidden;
 }
-/* line 256, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 footer a {
   margin-left: 25px;
   color: #fff;
 }
-/* line 260, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 footer .address {
   position: relative;
   float: right;
   margin-right: 25px;
   color: #fff;
 }
-/* line 266, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 footer .address .icon {
   position: absolute;
   left: 0;
@@ -411,16 +455,16 @@ footer .address .icon {
   width: auto;
   transform: translateX(-100%);
 }
-/* line 273, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 footer .address .icon svg {
   height: 100%;
   width: auto;
 }
-/* line 276, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 footer .address .icon svg .st0 {
   stroke: none;
 }
-/* line 281, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 footer .address .location {
   display: inline-block;
   padding-left: 10px;

@@ -58,6 +58,13 @@ section.center {
 	}
 }
 
+@include for-phone-only {
+	section {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+
 
 ///////////// header /////////////
 header {
@@ -83,6 +90,17 @@ header {
 			font-size: 16px;
 			line-height: 50px;
 			margin-right: 10px;
+		}
+	}
+	@include for-phone-only {
+		#logo {
+			width: Calc(100% - 50px);
+			margin: 0;
+			padding: 0 25px;
+			text-align: center;
+		}
+		#links {
+			display: none;
 		}
 	}
 }
@@ -178,6 +196,21 @@ header {
 		}
 	}
 }
+@include for-phone-only {
+	#carousel {
+		height: 265px;
+	}
+}
+@include for-tablet-portrait-up {
+	#carousel {
+		height: 525px;
+	}
+}
+@include for-tablet-landscape-up {
+	#carousel {
+		height: Calc(100vh - 70px);
+	}
+}
 
 
 ///////////// info /////////////
@@ -224,6 +257,11 @@ header {
 					letter-spacing: 0.015em;
 				}
 			}	
+		}
+	}
+	@include for-phone-only {
+		#facility {
+			margin-right: 0px;
 		}
 	}
 	#pricing {
